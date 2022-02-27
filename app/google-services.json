@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "134984179613",
+    "project_id": "theradot-b70f1",
+    "storage_bucket": "theradot-b70f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134984179613:android:960bb44d91229123a71974",
+        "android_client_info": {
+          "package_name": "com.theradot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134984179613-cfn3usfidibr3m4vnh885spegb4gjpb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.theradot",
+            "certificate_hash": "3b3e5d44618ae681201209df4108a2f4dda413c3"
+          }
+        },
+        {
+          "client_id": "134984179613-ne6m6n3j1eo7f844qifv40rs2jfqlnvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlNYh26V-wTV4D0nEPYx4cCZBiM-AEFRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134984179613-ne6m6n3j1eo7f844qifv40rs2jfqlnvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

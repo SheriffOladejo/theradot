@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerifyPhoneNumberActivity"
+    android:paddingStart="20dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="20dp">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:textStyle="bold"
+            android:fontFamily="@font/aventa_bold"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's confirm your phone number!"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aventa_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A verification code has been sent to your phone. Enter code below"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aventa_regular"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_marginStart="10dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt3"
+                android:layout_marginStart="10dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_marginStart="10dp"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt5"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt6"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:maxLength="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:fontFamily="@font/aventa_bold"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn't get the code?"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aventa_regular"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/request_code"
+                android:selectAllOnFocus="false"
+                android:linksClickable="false"
+                android:autoLink="all"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/request_code"
+                android:textColor="@color/black"
+                android:fontFamily="@font/aventa_regular"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/all_round_corners_10dp"
+        android:backgroundTint="@color/button_green"
+        android:text="Verify"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/aventa_bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What time would you like \nto perform your exercises?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aventa_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#F5F5F9"
+            android:background="@drawable/all_round_corners_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            android:fadeScrollbars="true"
+            style="@style/Theme.picker"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What day(s) would you like \nto perform your exercises?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/aventa_bold"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"/>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gl1"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="7"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                app:layout_columnWeight="1"
+                android:background="@drawable/rectangle_border_outline"
+                android:id="@+id/sunday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="S"
+                android:textColor="@color/text_color"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:gravity="center"
+                app:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/monday"
+                android:layout_width="30dp"
+                android:textColor="@color/text_color"
+                android:layout_height="35dp"
+                android:text="M"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/tuesday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="T"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/wednesday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="W"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/thursday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="T"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/friday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="F"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+            <TextView
+                android:id="@+id/saturday"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="S"
+                android:textColor="@color/text_color"
+                android:background="@drawable/rectangle_border_outline"
+                android:padding="8dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                app:layout_gravity="center"
+                app:layout_columnWeight="1"/>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set_reminder"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/all_round_corners_5dp"
+        android:backgroundTint="@color/button_green"
+        android:text="Set reminder"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/aventa_bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

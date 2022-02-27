@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/ll"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/all_round_corners_5dp"
+            android:backgroundTint="#A1A4B2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_android"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:fontFamily="@font/aventa_bold"
+                android:id="@+id/exercise_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ankle pump exercise"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:fontFamily="@font/aventa_regular"
+                android:id="@+id/exercise_description"
+                android:layout_below="@id/exercise_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPPER EXTREMITIESc iuhwduwh uhudhwd sdhs dshds hosdh dsd sosd sdis ds dsod sdhso dhsd sds dsid sdsi dsd sds ds dss\n \ngvjv ve i geyg ei"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textSize="12sp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="0dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="5dp" />
+
+            <RelativeLayout
+                android:id="@+id/exercise_category_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/circle"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/circle"
+                    android:backgroundTint="#252525"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_toRightOf="@id/circle"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/aventa_regular"
+                    android:id="@+id/exercise_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPPER EXTREMITIES"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:paddingStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

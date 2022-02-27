@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/video_view_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <VideoView
+                android:layout_centerInParent="true"
+                android:id="@+id/video_view"
+                android:backgroundTint="@color/exercise_category"
+                android:layout_width="match_parent"
+                android:scaleX="1.4"
+                android:scaleY="1"
+                android:layout_height="500dp" />
+
+
+            <ProgressBar
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/progress_bar"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@id/video_view_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/exercise_category"
+                android:fontFamily="@font/aventa_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ankle pump exercise"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:clickable="false"
+                android:id="@+id/progress_checkbox"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performed: 2/4"
+                android:fontFamily="@font/aventa_regular"/>
+
+            <TextView
+                android:fontFamily="@font/aventa_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Exercise description"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/exercise_description"
+                android:fontFamily="@font/aventa_regular"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:text="Lie back or sit with legs stretched out together.
+                Straighten ankles like pressing on a gas pedal.
+                Keep knees straightened to stretch calf muscles.
+                Repeat 10 times"/>
+
+            <TextView
+                android:fontFamily="@font/aventa_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Objective"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/exercise_objectives"
+                android:fontFamily="@font/aventa_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Improves circulation and joint AROM." />
+
+            <Button
+                android:id="@+id/mark_complete"
+                android:fontFamily="@font/aventa_regular"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="18sp"
+                android:background="@drawable/all_round_corners_10dp"
+                android:backgroundTint="@color/button_green"
+                android:textAllCaps="false"
+                android:text="Mark as performed"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left_arrow"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>
